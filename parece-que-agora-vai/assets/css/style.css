@@ -1,0 +1,546 @@
+.haus {
+    height: auto;
+    background-color: #fff;
+    display: flex
+}
+
+.haus img {
+    top: -75px;
+    position: relative;
+    width: 520px
+}
+
+.haus img {
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px
+}
+
+.haus34-info {
+    margin-left: 80px;
+    margin-top: 80px
+}
+
+.experiencia,
+.plantas {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.experiencia h1,
+.plantas h1,
+.unidades h1 {
+    width: 700px;
+    margin-top: 40px;
+    text-align: center
+}
+
+.especificacoes {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px*/
+    display: flex;
+    flex-direction: column
+}
+
+.experiencia article {
+    margin-top: 40px
+}
+
+.plantas {
+    height: auto
+}
+
+.estrelas {
+    margin-bottom: 40px
+}
+
+.slide-container {
+    width: 1120px;
+    height: 1220px;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .8);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all .25s ease-in-out;
+    display: flex;
+    align-items: center
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+
+.next,
+.prev {
+    margin: 0 10px;
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    transition: .6s ease;
+    border-radius: 3px;
+    user-select: none
+}
+
+.next {
+    right: 0;
+    border-radius: 3px
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px
+}
+
+.next:hover,
+.prev:hover {
+    background-color: rgba(0, 0, 0, .8)
+}
+
+.slide img {
+    max-width: 100%
+}
+
+.unidades {
+    background-color: #57310b;
+    height: 100vh;
+    margin-top: 60px
+}
+
+.unidades .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.unidades h1 {
+    color: #fff
+}
+
+.unidades article .subtitulo {
+    font-size: 36px;
+    text-align: center
+}
+
+.unidades .container article,
+.unidades .container p {
+    color: #fff!important
+}
+
+.unidades-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 40px;
+    grid-column-gap: 40px
+}
+
+.unidades-info img {
+    width: 100%;
+    border: 4px #fff solid;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px
+}
+
+.btn {
+    width: 80%;
+    margin: 0 auto;
+    align-self: center;
+    margin-top: 20px;
+    background-color: #fe9027
+}
+
+footer {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+footer p {
+    font-size: 14px
+}
+
+.btn-zap {
+    width: 100px;
+    height: 55px;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #25d366;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all .5s
+}
+
+.btn-zap img {
+    width: 35px
+}
+
+.btn-zap:hover {
+    background-color: #000
+}
+
+.galeria {
+    margin-top: 40px;
+    max-width: 100%;
+    line-height: 0;
+    padding-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
+
+.item {
+    padding: 4px;
+    width: 250px;
+    height: 190px;
+    margin-bottom: 20px
+}
+
+.item img {
+    max-width: 250px;
+    height: 190px;
+    outline: 3px solid #fff
+}
+
+.item img:hover {
+    opacity: .7;
+    cursor: pointer
+}
+
+.modal {
+    display: none;
+    z-index: 100
+}
+
+.modal:target {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, .6)
+}
+
+.imagen {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+@keyframes zoom {
+    0% {
+        opacity: .2;
+        transform: scale(.5)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+.imagen a {
+    margin: 0 4px
+}
+
+.imagen img {
+    max-width: 100%;
+    width: 60vw;
+    height: auto;
+    border: 8px solid #fff;
+    animation: zoom .5s ease-in-out;
+    position: relative
+}
+
+.imagen a:nth-child(2)::after {
+    content: "X";
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background: hsla(0, 0%, 0%, .5);
+    color: #fff;
+    position: absolute;
+    top: 2vh;
+    left: 2vw;
+    z-index: 1
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%
+}
+
+.ant,
+.sig {
+    width: 0;
+    height: 0;
+    border: 20px solid transparent
+}
+
+.ant {
+    border-right: 20px solid #fff
+}
+
+.sig {
+    border-left: 20px solid #fff
+}
+
+.ant:hover {
+    border-right: 20px solid #717171
+}
+
+.sig:hover {
+    border-left: 20px solid #717171
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .3s
+}
+
+[data-anime=left] {
+    transform: translate3d(-50px, 0, 0)
+}
+
+[data-anime=right] {
+    transform: translate3d(50px, 0, 0)
+}
+
+[data-anime=top] {
+    transform: translate3d(0, 50px, 0)
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+}
+
+@media only screen and (min-width:900px) and (max-width:1150px) {
+    .container {
+        width: 80%
+    }
+    .capa .container {
+        display: flex;
+        justify-content: space-between
+    }
+    .form-exclusivo {
+        margin-left: 20px
+    }
+    .haus img {
+        width: 260px;
+        height: 390px;
+        top: 60px
+    }
+    .haus34-info {
+        margin-top: 60px
+    }
+    .slide-container {
+        width: 720px;
+        height: 820px
+    }
+    .unidades {
+        height: auto
+    }
+    .unidades-info article button {
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 1rem
+    }
+}
+
+@media only screen and (min-width:788px) and (max-width:899px) {
+    .container {
+        width: 80%
+    }
+    .capa {
+        height: 1000px
+    }
+    .capa .container {
+        display: flex;
+        flex-direction: column
+    }
+    .apresentacao {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center
+    }
+    .form-exclusivo {
+        margin: 40px auto;
+        padding-bottom: 20px
+    }
+    .form-exclusivo h2 {
+        margin-top: 20px;
+        margin-bottom: 20px
+    }
+    .form-exclusivo form .btn-enviar,
+    .form-exclusivo form input {
+        max-width: 300px
+    }
+    .haus {
+        flex-direction: column
+    }
+    .haus img {
+        top: 20px;
+        margin: 0 auto
+    }
+    .slide-container {
+        width: 520px;
+        height: 620px
+    }
+    .unidades {
+        height: auto
+    }
+    .unidades-info {
+        display: flex;
+        flex-direction: column
+    }
+    .unidades-info button {
+        margin-bottom: 20px
+    }
+    .unidades-info img {
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (max-width:787px) {
+    .capa {
+        background-size: cover;
+        background-image: linear-gradient(90deg, #57310b 20%, rgba(242, 41, 91, 0) 100%), url(../img/Haus-34oti.jpg);
+        height: 900px
+    }
+    .container {
+        width: 80%
+    }
+    .capa .container {
+        display: flex;
+        flex-direction: column
+    }
+    .apresentacao {
+        width: 100%;
+        margin-top: 60px
+    }
+    .apresentacao h1 {
+        font-size: 24px;
+        line-height: 1.9rem;
+        text-align: center
+    }
+    .apresentacao h6,
+    .apresentacao p {
+        text-align: center
+    }
+    .form-exclusivo {
+        padding: 20px;
+        margin: 40px auto;
+        width: 100%
+    }
+    .form-exclusivo h2 {
+        margin: 20px auto 20px auto;
+        width: 100%
+    }
+    .form-exclusivo form {
+        padding: 0
+    }
+    .form-exclusivo form .btn-enviar {
+        font-size: 16px;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    .form-exclusivo form .btn-enviar,
+    .form-exclusivo form input {
+        max-width: 100%
+    }
+    .haus {
+        display: flex;
+        flex-direction: column
+    }
+    .haus img {
+        top: 20px;
+        width: 100%
+    }
+    .haus34-info {
+        margin-left: 0;
+        margin-top: 20px
+    }
+    .haus34-info h1 {
+        text-align: center;
+        margin-top: 20px
+    }
+    .especificacoes {
+        display: flex;
+        flex-direction: column
+    }
+    .experiencia h1,
+    .plantas h1,
+    .unidades h1 {
+        width: 100%
+    }
+    .estrelas {
+        margin-top: 20px
+    }
+    .slide-container {
+        width: 320px;
+        height: 420px
+    }
+    .unidades {
+        height: auto
+    }
+    .unidades-info {
+        display: flex;
+        flex-direction: column
+    }
+    .unidades-info button {
+        margin-bottom: 20px;
+        font-size: 1rem
+    }
+    .unidades-info img {
+        margin-bottom: 20px
+    }
+    footer p {
+        font-size: .8rem;
+        line-height: .9rem
+    }
+}

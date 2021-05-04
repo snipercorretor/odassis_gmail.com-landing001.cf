@@ -1,0 +1,191 @@
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ol,
+ul,
+li,
+form,
+label,
+article,
+footer,
+header,
+nav,
+section,
+main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+p {
+    color: #636363;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #636363;
+    font-weight: bold;
+}
+
+.capa {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, #57310B 20%, rgba(242, 41, 91, 0) 100%), url("/templates/haus-34/assets/img/Haus-34oti.jpg");
+    background-position: bottom left;
+    background-size: cover;
+    opacity: 0.95;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    height: 100vh;
+}
+
+.capa .container {
+    display: grid;
+    grid-template-columns: 1fr 375px;
+    height: 100vh;
+    color: #fff;
+}
+
+.apresentacao {
+    width: 630px;
+    margin-top: 100px;
+}
+
+.apresentacao h1 {
+    font-size: 64px;
+    line-height: 65px;
+    font-weight: bold;
+}
+
+.apresentacao h6 {
+    margin-bottom: .9rem;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.apresentacao .desc {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+    margin-top: .9rem;
+}
+
+.form-exclusivo {
+    background-color: #fff;
+    height: 500px;
+    max-width: 365px;
+    margin-top: 100px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.form-exclusivo h2 {
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #424242;
+    text-align: center;
+    width: 300px;
+    margin: 55px auto 40px auto;
+}
+
+.form-exclusivo form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 34px;
+    font-size: 16px;
+    color: #636363;
+    font-weight: 500;
+}
+
+.form-exclusivo form label {
+    margin-bottom: 5;
+}
+
+.form-exclusivo form input {
+    width: 300px;
+    height: 45px;
+    padding: 20px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #636363;
+    outline: none;
+    transition: all .3s;
+}
+
+form input:focus,
+form input:hover {
+    border-color: #424242;
+}
+
+.btn-enviar {
+    height: 70px;
+    background-color: #FF5F00;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 300px;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.1);
+}
